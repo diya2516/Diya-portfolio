@@ -275,27 +275,32 @@ nav {
 }
 
 /* ===== PROJECTS ===== */
-.projects h2 {
+.projects {
   text-align: center;
+  padding: 70px 40px;
+}
+
+.projects h2 {
   font-size: 42px;
   color: #00adb5;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* ✅ centers all project boxes */
   gap: 25px;
 }
 
 .project-card {
   border: 1px solid #00adb5;
   border-radius: 10px;
-  padding: 25px;
+  padding: 25px 35px;
   width: 350px;
   background-color: transparent;
   text-align: center;
+  margin: 10px;
   transition: all 0.3s ease;
 }
 
@@ -304,6 +309,25 @@ nav {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 15px;
+  border: 1px solid #00adb5;
+  color: #00adb5;
+  background: transparent;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background: #00adb5;
+  color: #fff;
+}
+
 
 /* ===== INTERNSHIPS ===== */
 .internship {
@@ -317,11 +341,18 @@ nav {
   margin-bottom: 25px;
 }
 
+.internship-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ centers internship boxes */
+  gap: 25px;
+}
+
 .internship-card {
   border: 1px solid #00adb5;
   border-radius: 10px;
   padding: 25px 35px;
-  width: 350px; /* same width as .project-card */
+  width: 350px;
   background-color: transparent;
   text-align: center;
   margin: 10px;
@@ -333,10 +364,10 @@ nav {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
-.project-card .btn,
+
 .internship-card .btn {
   display: inline-block;
-  margin-top: 15px; /* ensures button stays below the content */
+  margin-top: 15px;
   border: 1px solid #00adb5;
   color: #00adb5;
   background: transparent;
@@ -345,14 +376,12 @@ nav {
   font-size: 16px;
   border-radius: 5px;
   transition: all 0.3s ease;
-  position: relative;
 }
-.project-card .btn:hover
+
 .internship-card .btn:hover {
   background: #00adb5;
   color: #fff;
 }
-
 
 /* ===== CONTACT ===== */
 .contact {
@@ -464,6 +493,7 @@ footer:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
+
 
 
 
