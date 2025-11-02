@@ -277,7 +277,7 @@ nav {
 /* ===== PROJECTS ===== */
 .projects {
   text-align: center;
-  padding: 70px 40px;
+  padding: 50px 40px;
 }
 
 .projects h2 {
@@ -500,6 +500,7 @@ footer:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
+
 
 
 
