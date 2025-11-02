@@ -265,7 +265,7 @@ nav {
   width: 750px;
   background-color: transparent;
   margin: 15px auto;
-  min-height: 150px;
+  min-height: 90px;
   transition: all 0.3s ease;
 }
 
@@ -444,5 +444,6 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
