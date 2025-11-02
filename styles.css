@@ -6,10 +6,6 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #0a0a0a;
   color: #fff;
@@ -201,12 +197,12 @@ nav {
   color: #f5f2f2;
   font-size: 18px;
   line-height: 1.6;
-  animation: blinkBorder 2s infinite;
+  animation: blinkBorder 2.5s infinite ease-in-out;
 }
 
 @keyframes blinkBorder {
-  0%, 100% { box-shadow: 0 0 10px #00adb5; }
-  50% { box-shadow: 0 0 25px #00adb5; }
+  0%, 100% { box-shadow: 0 0 5px #00adb5; }
+  50% { box-shadow: 0 0 15px #00adb5; }
 }
 
 /* ===== SKILLS ===== */
@@ -299,11 +295,12 @@ nav {
 .project-card {
   border: 1px solid #00adb5;
   border-radius: 10px;
-  padding: 20px;
-  width: 420px;
+  padding: 25px;
+  width: 380px;
   background-color: transparent;
   transition: transform 0.3s ease;
   text-align: center;
+  animation: blinkBorder 3s infinite ease-in-out;
 }
 
 .project-card:hover {
@@ -343,10 +340,12 @@ nav {
   border: 1px solid #00adb5;
   border-radius: 10px;
   padding: 25px;
-  width: 800px;
+  width: 380px;
+  margin: 0 auto;
   background-color: transparent;
   text-align: center;
   transition: transform 0.3s ease;
+  animation: blinkBorder 3s infinite ease-in-out;
 }
 
 .internship-card:hover {
@@ -396,25 +395,26 @@ nav {
   color: white;
   font-size: 18px;
   outline: none;
-  animation: blinkBorder 2s infinite;
+  box-shadow: 0 0 5px #00adb5;
 }
 
 .contact button {
   background: transparent;
   border: 2px solid #00adb5;
   color: #00adb5;
-  padding: 20px 25px;
+  padding: 15px 25px;
   font-size: 18px;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s ease;
   margin-top: 10px;
-  animation: blinkBorder 2s infinite;
+  box-shadow: 0 0 5px #00adb5;
 }
 
 .contact button:hover {
   background: #00adb5;
   color: black;
+  box-shadow: 0 0 15px #00adb5;
 }
 
 /* ===== FOOTER ===== */
@@ -439,4 +439,3 @@ footer:hover {
   .home-content h1 { font-size: 36px; }
   .home-content p { font-size: 16px; }
 }
-
