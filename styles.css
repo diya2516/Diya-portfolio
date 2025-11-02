@@ -74,7 +74,7 @@ nav {
 /* ===== HOME ===== */
 .home {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-height: 90vh;
   color: #fff;
@@ -84,16 +84,18 @@ nav {
 .home-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 60px;
   flex-wrap: wrap;
-  text-align: center;
+  width: 100%;
 }
 
 .img-box {
-  flex: 1 1 280px;
+  flex: 1;
   display: flex;
   justify-content: center;
+  animation: slideLeft 1.5s ease forwards;
+  opacity: 0;
 }
 
 .img-box img {
@@ -112,8 +114,10 @@ nav {
 }
 
 .home-content {
-  flex: 1 1 400px;
-  margin-top: 2%;
+  flex: 1;
+  text-align: left;
+  animation: slideRight 1.5s ease forwards;
+  opacity: 0;
 }
 
 .home-content h1 {
@@ -135,7 +139,7 @@ nav {
 .icon-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
   margin-top: 15px;
 }
@@ -162,6 +166,17 @@ nav {
   transform: scale(1.1);
 }
 
+/* ===== ANIMATIONS ===== */
+@keyframes slideLeft {
+  0% { transform: translateX(-80px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(80px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
 /* ===== ABOUT ===== */
 .about {
   padding: 80px 50px;
@@ -178,7 +193,7 @@ nav {
 
 .about p {
   display: inline-block;
-  border: 1px solid #00adb5;
+  border: 2px solid #00adb5;
   border-radius: 10px;
   padding: 30px 40px;
   max-width: 900px;
@@ -186,6 +201,12 @@ nav {
   color: #f5f2f2;
   font-size: 18px;
   line-height: 1.6;
+  animation: blinkBorder 2s infinite;
+}
+
+@keyframes blinkBorder {
+  0%, 100% { box-shadow: 0 0 10px #00adb5; }
+  50% { box-shadow: 0 0 25px #00adb5; }
 }
 
 /* ===== SKILLS ===== */
@@ -260,17 +281,6 @@ nav {
   box-shadow: 0 0 15px #00adb5;
 }
 
-.edu-card h3 {
-  color: #ffffff;
-  font-size: 26px;
-  margin-bottom: 8px;
-}
-
-.edu-card p {
-  color: #f7f4f4;
-  font-size: 20px;
-}
-
 /* ===== PROJECTS ===== */
 .projects h2 {
   text-align: center;
@@ -301,18 +311,6 @@ nav {
   box-shadow: 0 0 15px #00adb5;
 }
 
-.project-card h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.project-card p {
-  font-size: 18px;
-  color: #ddd;
-  margin-bottom: 15px;
-}
-
 .project-card .btn {
   border: 1px solid #00adb5;
   color: #00adb5;
@@ -341,12 +339,6 @@ nav {
   margin-bottom: 25px;
 }
 
-.internship-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .internship-card {
   border: 1px solid #00adb5;
   border-radius: 10px;
@@ -362,16 +354,20 @@ nav {
   box-shadow: 0 0 15px #00adb5;
 }
 
-.internship-card h1 {
-  font-size: 26px;
-  color: #fff;
-  margin-bottom: 10px;
+.internship-card .btn {
+  border: 1px solid #00adb5;
+  color: #00adb5;
+  background: transparent;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-.internship-card p {
-  font-size: 18px;
-  color: #ddd;
-  line-height: 1.5;
+.internship-card .btn:hover {
+  background: #00adb5;
+  color: #fff;
 }
 
 /* ===== CONTACT ===== */
@@ -388,12 +384,6 @@ nav {
   color: #00adb5;
 }
 
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .contact input,
 .contact textarea {
   width: 80%;
@@ -406,18 +396,20 @@ nav {
   color: white;
   font-size: 18px;
   outline: none;
+  animation: blinkBorder 2s infinite;
 }
 
 .contact button {
   background: transparent;
   border: 2px solid #00adb5;
   color: #00adb5;
-  padding: 12px 25px;
+  padding: 20px 25px;
   font-size: 18px;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s ease;
   margin-top: 10px;
+  animation: blinkBorder 2s infinite;
 }
 
 .contact button:hover {
@@ -446,5 +438,4 @@ footer:hover {
   .img-box img { width: 200px; height: 200px; }
   .home-content h1 { font-size: 36px; }
   .home-content p { font-size: 16px; }
-  .about p, .edu-card p, .project-card p, .internship-card p { font-size: 16px; }
 }
