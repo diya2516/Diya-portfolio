@@ -100,13 +100,14 @@ nav {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #00adb5;
-  box-shadow: 0 0 15px rgba(0, 173, 181, 0.4);
-  transition: transform 0.4s ease;
+  box-shadow: 0 0 10px rgba(0, 173, 181, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
   margin-top: 10%;
 }
 
 .img-box img:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 173, 181, 0.6);
 }
 
 .home-content {
@@ -151,14 +152,15 @@ nav {
   color: #00adb5;
   font-size: 20px;
   text-decoration: none;
-  transition: all 0.3s ease;
   background: transparent;
+  transition: all 0.3s ease;
 }
 
-.icon-btn:hover {
+.icon-btn:hover,
+.icon-btn:active {
   background: #00adb5;
   color: #fff;
-  box-shadow: 0 0 10px rgba(0, 173, 181, 0.6);
+  box-shadow: 0 0 10px #00adb5;
   transform: scale(1.1);
 }
 
@@ -197,12 +199,11 @@ nav {
   color: #f5f2f2;
   font-size: 18px;
   line-height: 1.6;
-  animation: blinkBorder 2.5s infinite ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
-@keyframes blinkBorder {
-  0%, 100% { box-shadow: 0 0 5px #00adb5; }
-  50% { box-shadow: 0 0 15px #00adb5; }
+.about p:hover {
+  box-shadow: 0 0 15px #00adb5;
 }
 
 /* ===== SKILLS ===== */
@@ -229,14 +230,15 @@ nav {
   font-weight: bold;
   border-radius: 10px;
   border: 1px solid #00adb5;
-  transition: 0.3s;
   color: white;
+  transition: all 0.3s ease;
 }
 
-.skill-card:hover {
+.skill-card:hover,
+.skill-card:active {
   color: #00adb5;
-  transform: translateY(-3px);
   box-shadow: 0 0 10px #00adb5;
+  transform: translateY(-3px);
 }
 
 .skill-card i {
@@ -256,23 +258,19 @@ nav {
   margin-bottom: 20px;
 }
 
-.edu-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .edu-card {
   border: 1px solid #00adb5;
   border-radius: 10px;
-  padding: 20px;
-  width: 700px;
+  padding: 30px;
+  width: 750px;
   background-color: transparent;
-  margin: 10px auto;
-  transition: transform 0.3s ease;
+  margin: 15px auto;
+  min-height: 220px;
+  transition: all 0.3s ease;
 }
 
-.edu-card:hover {
+.edu-card:hover,
+.edu-card:active {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
@@ -296,14 +294,14 @@ nav {
   border: 1px solid #00adb5;
   border-radius: 10px;
   padding: 25px;
-  width: 380px;
+  width: 350px;
   background-color: transparent;
-  transition: transform 0.3s ease;
   text-align: center;
-  animation: blinkBorder 3s infinite ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.project-card:hover {
+.project-card:hover,
+.project-card:active {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
@@ -340,15 +338,15 @@ nav {
   border: 1px solid #00adb5;
   border-radius: 10px;
   padding: 25px;
-  width: 380px;
-  margin: 0 auto;
+  width: 350px;
   background-color: transparent;
   text-align: center;
-  transition: transform 0.3s ease;
-  animation: blinkBorder 3s infinite ease-in-out;
+  margin: 10px;
+  transition: all 0.3s ease;
 }
 
-.internship-card:hover {
+.internship-card:hover,
+.internship-card:active {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
@@ -395,7 +393,14 @@ nav {
   color: white;
   font-size: 18px;
   outline: none;
-  box-shadow: 0 0 5px #00adb5;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact input:hover,
+.contact textarea:hover,
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: 0 0 12px #00adb5;
 }
 
 .contact button {
@@ -406,12 +411,12 @@ nav {
   font-size: 18px;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
   margin-top: 10px;
-  box-shadow: 0 0 5px #00adb5;
 }
 
-.contact button:hover {
+.contact button:hover,
+.contact button:active {
   background: #00adb5;
   color: black;
   box-shadow: 0 0 15px #00adb5;
@@ -438,4 +443,5 @@ footer:hover {
   .img-box img { width: 200px; height: 200px; }
   .home-content h1 { font-size: 36px; }
   .home-content p { font-size: 16px; }
+  .project-card, .internship-card { width: 100%; }
 }
