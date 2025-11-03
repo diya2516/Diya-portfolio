@@ -68,21 +68,23 @@ nav {
 }
 /* ===== HOME SECTION ===== */
 .home {
+  background-color: #000;
+  color: white;
+  padding: 100px 10%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 120px 10%;
+  align-items: center;
   min-height: 100vh;
-  background-color: #0a0a0a;
-  color: #fff;
+  overflow: hidden;
 }
 
 .home-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 60px;
+  width: 100%;
   flex-wrap: wrap;
-  gap: 80px; /* gap between image and content */
 }
 
 /* ===== IMAGE BOX ===== */
@@ -90,121 +92,127 @@ nav {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  animation: slideInLeft 1s ease forwards;
+  opacity: 0;
 }
 
 .img-box img {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #00adb5;
-  box-shadow: 0 0 25px rgba(0, 173, 181, 0.6);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 3px solid #00c4cc;
+  box-shadow: 0 0 20px rgba(0, 196, 204, 0.4);
 }
 
-.img-box img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 35px rgba(0, 173, 181, 0.9);
-}
-
-/* ===== TEXT CONTENT ===== */
+/* ===== HOME CONTENT ===== */
 .home-content {
   flex: 1;
-  max-width: 600px;
+  animation: slideInRight 1s ease forwards;
+  opacity: 0;
 }
 
 .home-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
 .highlight {
-  color: #00adb5;
+  color: #00c4cc;
 }
 
 .home-content p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: #d1d5db;
-  margin-top: 10px;
+  margin: 20px 0;
+  max-width: 500px;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 /* ===== ICON BUTTONS ===== */
 .icon-buttons {
   display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 25px;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .icon-btn {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  color: #00c4cc;
+  border: 2px solid #00c4cc;
   border-radius: 50%;
-  border: 2px solid #00adb5;
-  color: #00adb5;
-  font-size: 1.8rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s ease;
   text-decoration: none;
-  background: transparent;
 }
 
 .icon-btn:hover {
-  background: #00adb5;
-  color: #fff;
-  box-shadow: 0 0 15px rgba(0, 173, 181, 0.6);
+  background: #00c4cc;
+  color: #000;
   transform: scale(1.1);
 }
 
-/* ===== ICON TOOLTIP BELOW ===== */
+/* ===== TOOLTIP EFFECT ===== */
 .icon-btn::after {
   content: attr(title);
   position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #00adb5;
-  color: #fff;
-  font-size: 14px;
-  padding: 4px 10px;
-  border-radius: 6px;
+  bottom: -25px;
+  background: #00c4cc;
+  color: #000;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
   opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
   pointer-events: none;
-  transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .icon-btn:hover::after {
   opacity: 1;
-  transform: translateX(-50%) translateY(8px);
+  transform: translateY(0);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .home-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
-    gap: 40px;
   }
-
-  .home-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .home-content p {
-    font-size: 1rem;
-  }
-
-  .img-box img {
-    width: 220px;
-    height: 220px;
+  .img-box, .home-content {
+    animation: none;
+    opacity: 1;
   }
 }
-
 
 /* ===== ABOUT ===== */
 .about {
@@ -622,6 +630,7 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
 
