@@ -146,7 +146,7 @@ nav {
   align-items: center;
   justify-content: center;
   width: 60px;
-  height: 60px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid #00adb5;
   color: #00adb5;
@@ -607,6 +607,7 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
 
