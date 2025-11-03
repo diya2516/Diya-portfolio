@@ -132,7 +132,6 @@ nav {
   line-height: 1.5;
   color: #d1d5db;
 }
-
 .icon-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -143,16 +142,27 @@ nav {
 
 .icon-btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #00adb5;
   color: #00adb5;
-  font-size: 20px;
+  font-size: 22px;
   text-decoration: none;
   background: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.icon-btn span {
+  font-size: 12px;
+  color: #00adb5;
+  margin-top: 6px;
+  opacity: 0;
+  transform: translateY(5px);
   transition: all 0.3s ease;
 }
 
@@ -162,6 +172,12 @@ nav {
   color: #fff;
   box-shadow: 0 0 10px #00adb5;
   transform: scale(1.1);
+}
+
+.icon-btn:hover span,
+.icon-btn:active span {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -591,6 +607,7 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
 
