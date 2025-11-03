@@ -11,6 +11,25 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
+body {
+  scroll-behavior: smooth;
+  padding-top: 70px; /* Prevent content from hiding behind navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
 
 /* ===== HEADER ===== */
 header {
@@ -509,6 +528,7 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
 
