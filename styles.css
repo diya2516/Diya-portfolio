@@ -68,23 +68,21 @@ nav {
 }
 /* ===== HOME SECTION ===== */
 .home {
-  width: 100%;
-  min-height: 100vh;
-  padding: 120px 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  padding: 120px 10%;
+  min-height: 100vh;
+  background-color: #0a0a0a;
   color: #fff;
 }
 
-/* Flex container: image left, text right */
 .home-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 80px; /* space between photo & text */
+  gap: 80px; /* gap between image and content */
 }
 
 /* ===== IMAGE BOX ===== */
@@ -100,8 +98,8 @@ nav {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #00adb5;
-  box-shadow: 0 0 25px rgba(0, 173, 181, 0.7);
-  transition: all 0.4s ease;
+  box-shadow: 0 0 25px rgba(0, 173, 181, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .img-box img:hover {
@@ -116,29 +114,27 @@ nav {
 }
 
 .home-content h1 {
-  font-size: 2.6rem;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
-.home-content .highlight {
+.highlight {
   color: #00adb5;
 }
 
 .home-content p {
-  margin-top: 15px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
-  color: #dcdcdc;
+  color: #d1d5db;
+  margin-top: 10px;
 }
 
 /* ===== ICON BUTTONS ===== */
 .icon-buttons {
   display: flex;
-  flex-wrap: wrap;
   gap: 25px;
-  margin-top: 30px;
-  position: relative;
+  flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .icon-btn {
@@ -152,9 +148,9 @@ nav {
   border: 2px solid #00adb5;
   color: #00adb5;
   font-size: 1.8rem;
+  transition: all 0.3s ease;
   text-decoration: none;
   background: transparent;
-  transition: all 0.3s ease;
 }
 
 .icon-btn:hover {
@@ -164,18 +160,18 @@ nav {
   transform: scale(1.1);
 }
 
-/* ===== TOOLTIP TEXT BELOW ICON ===== */
+/* ===== ICON TOOLTIP BELOW ===== */
 .icon-btn::after {
   content: attr(title);
   position: absolute;
-  bottom: -28px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   background: #00adb5;
   color: #fff;
-  font-size: 0.8rem;
-  padding: 3px 8px;
-  border-radius: 5px;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 6px;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -184,10 +180,10 @@ nav {
 
 .icon-btn:hover::after {
   opacity: 1;
-  transform: translateX(-50%) translateY(5px);
+  transform: translateX(-50%) translateY(8px);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .home-container {
     flex-direction: column-reverse;
@@ -207,11 +203,8 @@ nav {
     width: 220px;
     height: 220px;
   }
-
-  .icon-buttons {
-    justify-content: center;
-  }
 }
+
 
 /* ===== ABOUT ===== */
 .about {
@@ -629,6 +622,7 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
 
