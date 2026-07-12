@@ -4,8 +4,15 @@
   <title>Diya Thomre | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="bg-stars"></div>
+    <div class="light light1"></div>
+    <div class="light light2"></div>                
+    <div class="light light3"></div>
+    <div class="light light4"></div>
   <header>
     <nav>
       <h2 class="logo">Diya<span>Thomre</span></h2>
@@ -22,114 +29,216 @@
     </nav>
   </header>
 
-  <section id="home" class="home">
+<!-- Home -->
+<section id="home" class="home">
     <div class="home-container">
-      <div class="img-box">
-        <img src="https://i.postimg.cc/Y0YP1qFF/diya-port-1.jpg" alt="Diya Thomre">
-      </div>
-      <div class="home-content">
-        <h1>Hello,</h1>
-        <h1>I'm <span class="highlight">Diya Thomre</span></h1>
-        <p>Aspiring Software Developer
-        Passionate about building efficient applications and solving real-world problems through clean, reliable code.</p>
-        <div class="icon-buttons">
-          <a href="https://drive.google.com/file/d/1DhlmrRt0kqIv21rKHypZfto4Q27CdAJI/view?usp=sharing" download class="icon-btn" title="Download CV">
-            <i class="fa-solid fa-download"></i>
-          </a>
-          <a href="#contact" class="icon-btn" title="Contact">
-            <i class="fa-solid fa-user"></i>
-          </a>
-          <a href="http://www.linkedin.com/in/diya-thomre-731341295" target="_blank" class="icon-btn" title="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/diya2516" target="_blank" class="icon-btn" title="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="diyathomre@gmail.com" class="icon-btn" title="Gmail">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+        <div class="home-image">
+            <img src="https://i.postimg.cc/Y0YP1qFF/diya-port-1.jpg" alt="Diya Thomre">
         </div>
-      </div>
+        <div class="home-content">
+            <h4>Hi, I'm</h4>
+            <h1>Diya Thomre</h1>
+            <h2>Aspiring Software Developer</h2>
+            <p>Passionate about building efficient, scalable applications and solving real-world problems through clean, reliable code.</p>
+            <div class="home-buttons">
+                <a href="https://drive.google.com/file/d/1DhlmrRt0kqIv21rKHypZfto4Q27CdAJI/view?usp=sharing"
+                   target="_blank" class="btn secondary-btn"> Download Resume </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/diya-thomre-731341295" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/diya2516" target="_blank"> <i class="fab fa-github"></i></a>
+                <a href="#contact"> <i class="fas fa-user"></i> </a>
+                <a href="mailto:diyathomre@gmail.com"> <i class="fas fa-envelope"></i> </a>
+            </div> 
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="about" class="about">
+<!-- About -->
+<section id="about" class="about">
     <h2>About Me</h2>
-    <p>
-     I’m Diya Thomre, a Computer Science and Information Technology graduate with a strong foundation in 
-      Python, MySQL, HTML, CSS, and JavaScript. I’m passionate about developing efficient, user-focused 
-      applications and continuously enhancing my technical skills. I enjoy solving real-world problems through 
-      clean and reliable code, and my goal is to contribute to innovative software solutions while growing as a 
-      Software Developer in a dynamic and collaborative environment.
-    </p>
+    <p>I’m Diya Thomre, a Computer Science and Information Technology graduate with a strong foundation in Python, MySQL, HTML, CSS, and JavaScript. I enjoy building efficient, user-friendly applications and continuously expanding my technical knowledge through hands-on projects and practical learning. My experience includes developing applications in Python, working with databases, and creating responsive web interfaces that emphasize functionality and clean design.
+    I am passionate about problem-solving, writing maintainable code, and learning modern technologies that enhance software development. As an aspiring Software Developer, I am eager to contribute to innovative projects, collaborate with talented teams, and grow professionally by delivering reliable, high-quality software solutions that create real value. </p>
+</section>
 
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skill-boxes">
-      <div class="skill-card"><i class="fab fa-python"></i> Python</div>
-      <div class="skill-card"><i class="fas fa-database"></i> MySQL</div>
-      <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
-      <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
-      <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-      <div class="skill-card"><i class="fas fa-leaf"></i> Django</div>
+<!-- Skills -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skill-boxes">
+    <div class="skill-card">
+        <i class="devicon-python-plain colored"></i>
+        <span>Python</span>
     </div>
-    
-  </section>
-
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <div class="edu-list">
-      <div class="edu-card">
-        <h3>B.Tech in Computer Science and Information Technology</h3>
-        <p>Chalapathi Institute of Engineering and Technology</p>
-        <p><strong>Duration:</strong> 2021 – 2025</p>
-        <p><strong>CGPA:</strong> 8.4</p>
-      </div>
+    <div class="skill-card">
+        <i class="devicon-mysql-plain colored"></i>
+        <span>MySQL</span>
     </div>
-  </section>
+    <div class="skill-card">
+        <i class="devicon-html5-plain colored"></i>
+        <span>HTML</span>
+    </div>
+    <div class="skill-card">
+        <i class="devicon-css3-plain colored"></i>
+        <span>CSS</span>
+    </div>
+    <div class="skill-card">
+        <i class="devicon-javascript-plain colored"></i>
+        <span>JavaScript</span>
+    </div>
+    <div class="skill-card">
+        <i class="devicon-django-plain"></i>
+        <span>Django</span>
+    </div>
+  </div>
+</section>
 
-  <section id="projects" class="projects">
+<!-- Projects -->
+<section id="projects" class="projects">
     <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <div class="icon-circle">🛍</div>
-        <h1>Autonomous Commerce Platform</h1>
-        <p>AI-driven platform enabling automated checkout and personalized shopping experiences, transforming digital retail through intelligent automation.</p>
-        <a href="https://github.com/diya2516/Autonomous-commerce-platform-digital-retail-through-seamless-shopping.git" target="_blank" class="btn">View on GitHub</a>
-      </div>
+    <div class="project-container">
+        <div class="project-card">
+            <h3>Autonomous Commerce Platform</h3>
+            <img src="Home.png" alt="Bank Management System" class="project-image">
+            <p>AI-powered e-commerce platform providing automated shopping, secure checkout and personalized user experience. </p>
+            <div class="project-footer">
+                <div class="tech-stack">
+                    <span>Python, SQL, HTML, CSS, JavaScript, Django</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/diya2516/Autonomous-commerce-platform-digital-retail-through-seamless-shopping.git" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
 
-      <div class="project-card">
-        <div class="icon-circle">🏦</div>
-        <h1>Bank Management System</h1>
-        <p>Python and SQL-based system for managing accounts, transactions, and records with accuracy, security, simplicity, efficient data management, and user authentication.</p>
-        <a href="https://github.com/diya2516/bank-management-system.git" target="_blank" class="btn">View on GitHub</a>
-      </div>
-      
+        <div class="project-card">
+            <h3>Bank Management System</h3>
+            <img src="banking.jpg" alt="Bank Management System" class="project-image">
+            <p>Secure banking application for account management, transactions and authentication using Python & MySQL.</p>
+            <div class="project-footer">
+                <div class="tech-stack">
+                    <span>Python, MySQL</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/diya2516/bank-management-system.git" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
 
-      <div class="project-card">
-        <div class="icon-circle">🧮</div>
-        <h1>Responsive CalculatorWeb Application</h1>
-        <p>Responsive Calculator Web Application for performing basic arithmetic operations with a clean, user-friendly interface across desktop and mobile devices.</p>
-        <a href="https://github.com/diya2516/Calculator.git" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>Indian Railways System</h3>
+            <img src="Graph.png" alt="Bank Management System" class="project-image">
+            <p>Railway data analysis project using Python to visualize trends and generate machine learning insights.</p>
+            <div class="project-footer">
+                <div class="tech-stack">
+                    <span>Python, Data Analysis, Machine Learning</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/diya2516/Indian-Railways-System.git" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Responsive Calculator</h3>
+            <img src="calculator.png" alt="Bank Management System" class="project-image">
+            <p>Responsive calculator web application with a clean, modern interface for basic arithmetic operations.</p>
+            <div class="project-footer">
+                <div class="tech-stack">
+                    <span>HTML, CSS, JavaScript</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/diya2516/Calculator.git" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="internships" class="internship">
-    <h2>Internships</h2>
-    <div class="internship-list">
-      <div class="internship-card">
-        <div class="icon-circle">🚆</div>
-        <h1>Indian Railways System</h1>
-        <p>Developed a machine learning project analyzing railway data to predict delays and improve operational efficiency, gaining real-world data analytics experience.</p>
-        <a href="https://github.com/diya2516/Indian-Railways-System.git" target="_blank" class="btn">View on GitHub</a>
-      </div>
+<!-- Education -->
+<section id="education" class="education">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2021 - 2025</h3>
+                <h4>Bachelor of Technology in Computer Science and Information Technology</h4>
+                <p>Chalapathi Institute of Engineering and Technology, Guntur</p>
+                <span>CGPA: 8.4</span>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2019 - 2021</h3>
+                <h4>Board of Intermediate Education (MPC)</h4>
+                <p>NRI Junior College, Guntur</p>
+                <span>CGPA: 8.3</span>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2018 - 2019</h3>
+                <h4>Board of Secondary School Education</h4>
+                <p>JMJ English Medium High School, Guntur</p>
+                <span>CGPA: 9.0</span>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="contact" class="contact">
+<!-- Achievements -->
+<section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement-container">
+        <div class="achievement-card">
+            <img src="https://img.icons8.com/color/96/power-bi.png" alt="Power BI" class="achievement-icon">
+            <h3>Power BI Dashboard</h3>
+            <p>Developed an interactive Crop Yield Prediction dashboard with dynamic reports and data visualizations.</p>
+            <a href="https://drive.google.com/file/d/1DAySmtrUJ-fulFYIaStVKdDpBAhs2kUU/view?usp=sharing" target="_blank" class="achievement-link">
+                View Dashboard <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="achievement-card">
+            <i class="fab fa-hackerrank cert-icon"></i>
+            <h3>HackerRank</h3>
+            <p>Earned the Python Basics certificate by solving coding challenges and programming exercises.</p>
+            <a href="https://www.hackerrank.com/certificates/cc68fb27331e" target="_blank" class="achievement-link">
+                View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="certification-container">
+        <a href="https://www.hackerrank.com/certificates/e9a3cfec4251" target="_blank" class="certificate-card">
+            <i class="fab fa-hackerrank cert-icon"></i>
+            <div class="certificate-info">
+                <h3>Python Basics - HackerRank</h3>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1fpAwSlkInQrsGe4CGtwmevNS6w6fZEeH/view?usp=sharing" target="_blank" class="certificate-card">
+            <i class="fab fa-linkedin cert-icon linkedin"></i>
+            <div class="certificate-info">
+                <h3>SQL Essential Training - LinkedIn Learning</h3>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/1uIBuKwsC512d3DliAfXRa896H1A9JpRg/view?usp=sharing" target="_blank" class="certificate-card">
+            <i class="fas fa-laptop-code cert-icon vcube"></i>
+            <div class="certificate-info">
+                <h3>Python Full Stack - >VCube Solutions</h3>
+            </div>
+            <i class="fas fa-arrow-right arrow"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form id="contact-form">
       <div class="input-box">
@@ -143,12 +252,25 @@
       </div>
       <button type="submit" class="btn">Send Message</button>
     </form>
-  </section>
+</section>
 
-  <footer>
+<section class="footer-social">
+    <a href="https://github.com/YOUR_USERNAME" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:YOUR_EMAIL@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+</section>
+
+<footer>
     <p>© 2025 Diya Thomre | All Rights Reserved</p>
-  </footer>
-
-  <script src="script.js"></script>
-  </body>
+</footer>
+    <script src="script.js"></script>
+    </body>
 </html>
