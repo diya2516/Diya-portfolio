@@ -478,8 +478,7 @@ nav {
     margin-bottom: 50px;
 }
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 60%;
     gap: 50px;
 }
 .project-card {
