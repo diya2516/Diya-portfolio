@@ -164,7 +164,7 @@ nav {
 }
 /* ===== HOME ===== */
 .home{
-    min-height:70vh;
+    min-height:90vh;
     display:flex;
     align-items:center;
     padding:80px 8%;
@@ -423,7 +423,7 @@ nav {
     position:relative;
     max-width:700px;
     margin:auto;
-    padding-left:60px;
+    padding-left:75px;
 }
 .timeline::before{
     content:"";
@@ -442,8 +442,8 @@ nav {
     position:absolute;
     left:-34px;
     top:6px;
-    width:16px;
-    height:16px;
+    width:10px;
+    height:10px;
     border:3px solid #00adb5;
     border-radius:50%;
     background:#111827;
@@ -656,7 +656,7 @@ nav {
     display:flex;
     flex-direction:column;
     gap:20px;
-    max-width:500px;
+    max-width:600px;
     margin:auto;
 }
 .certificate-card{
@@ -710,6 +710,7 @@ nav {
 .certificate-card:hover .arrow{
     transform:translateX(8px);
 }
+
 /* ================= CONTACT ================= */
 
 .contact{
@@ -718,18 +719,18 @@ nav {
     color:#fff;
 }
 .contact h2{
-    font-size:36px;
+    font-size:42px;
     margin-bottom:35px;
     color:#fff;
 }
 #contact-form{
-    width:80%;
+    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 .input-box{
-    width:80%;
+    width:100%;
     display:flex;
     justify-content:center;
     margin-bottom:18px;
@@ -783,6 +784,7 @@ nav {
     transform:scale(.98);
 }
 
+
 .footer-social{
     display:flex;
     justify-content:center;
@@ -793,7 +795,7 @@ nav {
 
 .footer-social a{
     width:40px;
-    height:405px;
+    height:40px;
 
     display:flex;
     justify-content:center;
