@@ -55,7 +55,7 @@ body::after{
     rgba(0,217,255,.08),
     transparent 170px),
     radial-gradient(circle at 80% 80%,
-    rgba(139,92,246,.10),
+    rgba(139,92,246,.10), 
     transparent 220px),
     radial-gradient(circle at 20% 85%,
     rgba(139,92,246,.08),
