@@ -479,7 +479,7 @@ nav {
 }
 .project-container {
     display: grid;
-    width: 400px;
+    width: 500px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
 }
@@ -725,7 +725,7 @@ nav {
     color:#fff;
 }
 #contact-form{
-    width:100%;
+    width:55%;
     display:flex;
     flex-direction:column;
     align-items:center;
