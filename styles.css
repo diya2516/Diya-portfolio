@@ -182,8 +182,8 @@ nav {
     justify-content:center;
 }
 .home-image img{
-    width:360px;
-    height:360px;
+    width:330px;
+    height:330px;
     object-fit:cover;
     border-radius:50%;
     border:5px solid #00adb5;
@@ -194,16 +194,16 @@ nav {
 }
 .home-content h4{
     color:#fff;
-    font-size:26px;
+    font-size:24px;
     margin-bottom:8px;
 }
 .home-content h1{
-    font-size:58px;
+    font-size:45px;
     color:#fff;
     margin-bottom:10px;
 }
 .home-content h2{
-    font-size:34px;
+    font-size:29px;
     color:#00adb5;
     margin-bottom:20px;
 }
@@ -245,8 +245,8 @@ nav {
     gap:18px;
 }
 .social-icons a{
-    width:48px;
-    height:48px;
+    width:45px;
+    height:45px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -353,7 +353,7 @@ nav {
 }
 .about h2 {
   color: white;
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -365,7 +365,7 @@ nav {
   max-width: 900px;
   background: transparent;
   color: #f5f2f2;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
   transition: box-shadow 0.3s ease;
 }
@@ -374,7 +374,7 @@ nav {
 }
 /* ===== SKILLS ===== */
 .skills h2 {
-  font-size: 42px;
+  font-size: 38px;
   text-align: center;
   color: white;
   margin-bottom: 20px;
@@ -587,14 +587,14 @@ nav {
 }
 .achievements h2{
     text-align:center;
-    font-size:42px;
+    font-size: 38px;
     color:white;
     margin-bottom:45px;
 }
 .achievement-container{
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:43px;
     flex-wrap:wrap;
 }
 .achievement-card{
@@ -656,7 +656,7 @@ nav {
     display:flex;
     flex-direction:column;
     gap:20px;
-    max-width:850px;
+    max-width:700px;
     margin:auto;
 }
 .certificate-card{
@@ -695,7 +695,7 @@ nav {
 }
 .certificate-info h3{
     margin:0;
-    font-size:20px;
+    font-size:18px;
 }
 .certificate-info p{
     margin-top:5px;
@@ -723,13 +723,13 @@ nav {
     color:#fff;
 }
 #contact-form{
-    width:100%;
+    width:80%;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 .input-box{
-    width:100%;
+    width:80%;
     display:flex;
     justify-content:center;
     margin-bottom:18px;
@@ -796,8 +796,8 @@ nav {
 }
 
 .footer-social a{
-    width:55px;
-    height:55px;
+    width:45px;
+    height:45px;
 
     display:flex;
     justify-content:center;
@@ -828,5 +828,5 @@ footer{
     padding:20px;
     border-top:1px solid rgba(255,255,255,.08);
     color:#bdbdbd;
-    font-size:25px;
+    font-size:20px;
 }
