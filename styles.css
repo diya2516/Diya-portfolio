@@ -164,7 +164,7 @@ nav {
 }
 /* ===== HOME ===== */
 .home{
-    min-height:60vh;
+    min-height:70vh;
     display:flex;
     align-items:center;
     padding:80px 8%;
@@ -182,8 +182,8 @@ nav {
     justify-content:center;
 }
 .home-image img{
-    width:330px;
-    height:330px;
+    width:280px;
+    height:280px;
     object-fit:cover;
     border-radius:50%;
     border:5px solid #00adb5;
@@ -194,16 +194,16 @@ nav {
 }
 .home-content h4{
     color:#fff;
-    font-size:24px;
+    font-size:22px;
     margin-bottom:8px;
 }
 .home-content h1{
-    font-size:45px;
+    font-size:38px;
     color:#fff;
     margin-bottom:10px;
 }
 .home-content h2{
-    font-size:29px;
+    font-size:27px;
     color:#00adb5;
     margin-bottom:20px;
 }
@@ -245,8 +245,8 @@ nav {
     gap:18px;
 }
 .social-icons a{
-    width:45px;
-    height:45px;
+    width:40px;
+    height:40px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -353,7 +353,7 @@ nav {
 }
 .about h2 {
   color: white;
-  font-size: 38px;
+  font-size: 36px;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
@@ -362,7 +362,7 @@ nav {
   border: 2px solid #00adb5;
   border-radius: 10px;
   padding: 30px 45px;
-  max-width: 900px;
+  max-width: 800px;
   background: transparent;
   color: #f5f2f2;
   font-size: 17px;
@@ -374,7 +374,7 @@ nav {
 }
 /* ===== SKILLS ===== */
 .skills h2 {
-  font-size: 38px;
+  font-size: 36px;
   text-align: center;
   color: white;
   margin-bottom: 20px;
@@ -415,15 +415,15 @@ nav {
 /* ===== EDUCATION ===== */
 .education h2{
     text-align:center;
-    font-size:42px;
+    font-size:36px;
     color:white;
     margin-bottom:50px;
 }
 .timeline{
     position:relative;
-    max-width:800px;
+    max-width:700px;
     margin:auto;
-    padding-left:40px;
+    padding-left:60px;
 }
 .timeline::before{
     content:"";
@@ -587,7 +587,7 @@ nav {
 }
 .achievements h2{
     text-align:center;
-    font-size: 38px;
+    font-size: 36px;
     color:white;
     margin-bottom:45px;
 }
@@ -648,7 +648,7 @@ nav {
 }
 .certifications h2{
     text-align:center;
-    font-size:42px;
+    font-size:36px;
     color:white;
     margin-bottom:40px;
 }
@@ -656,7 +656,7 @@ nav {
     display:flex;
     flex-direction:column;
     gap:20px;
-    max-width:700px;
+    max-width:500px;
     margin:auto;
 }
 .certificate-card{
@@ -718,7 +718,7 @@ nav {
     color:#fff;
 }
 .contact h2{
-    font-size:42px;
+    font-size:36px;
     margin-bottom:35px;
     color:#fff;
 }
@@ -783,10 +783,6 @@ nav {
     transform:scale(.98);
 }
 
-/* ==========================
-        FOOTER SOCIAL
-========================== */
-
 .footer-social{
     display:flex;
     justify-content:center;
@@ -796,8 +792,8 @@ nav {
 }
 
 .footer-social a{
-    width:45px;
-    height:45px;
+    width:40px;
+    height:405px;
 
     display:flex;
     justify-content:center;
@@ -828,5 +824,5 @@ footer{
     padding:20px;
     border-top:1px solid rgba(255,255,255,.08);
     color:#bdbdbd;
-    font-size:20px;
+    font-size:17px;
 }
