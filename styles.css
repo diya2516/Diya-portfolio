@@ -480,8 +480,8 @@ nav {
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 850px;   
+    gap: 40px;
+    max-width: 900px;   
     margin: 0 auto;    
 }
 .project-card {
@@ -727,6 +727,7 @@ nav {
 }
 #contact-form{
     width:55%;
+    margin:0 auto;   /* <-- Add this line */
     display:flex;
     flex-direction:column;
     align-items:center;
