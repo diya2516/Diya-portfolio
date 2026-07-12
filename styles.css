@@ -469,7 +469,7 @@ nav {
 }
 /* ================= Projects ================= */
 .projects {
-    padding: 120px 8%;
+    padding: 80px 8%;
 }
 .projects h2 {
     text-align: center;
@@ -479,6 +479,7 @@ nav {
 }
 .project-container {
     display: grid;
+    width: 400px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
 }
