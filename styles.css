@@ -164,7 +164,7 @@ nav {
 }
 /* ===== HOME ===== */
 .home{
-    min-height:100vh;
+    min-height:70vh;
     display:flex;
     align-items:center;
     padding:80px 8%;
